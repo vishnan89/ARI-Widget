@@ -81,8 +81,9 @@
 
 
 .badgeMargin{
-    margin-right: 10px!important;
-    margin-bottom: 3px !important;
+    float: right !important;
+    margin-top:-15px !important;
+    margin-right: -10px !important;
     color: white !important;
     background-color: black !important
 }
