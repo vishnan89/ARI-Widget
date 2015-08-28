@@ -68,7 +68,7 @@ var io = require('socket.io').listen(server);
 // When a client connects, we note it in the console
 io.sockets.on('connection', function (socket) {
     
-     var XMLPath = "emp.xml";
+     var XMLPath = "omsDatasource.xml";
      var rawJSON = loadXMLDoc(XMLPath);
      function loadXMLDoc(filePath) 
     {
@@ -83,8 +83,8 @@ io.sockets.on('connection', function (socket) {
     
     }
     
-    fs.watchFile('emp.xml', function(curr, prev){
-        fs.readFile('emp.xml', function(err, data){
+    fs.watchFile('omsDatasource.xml', function(curr, prev){
+        fs.readFile('omsDatasource.xml', function(err, data){
             if(err) throw err;
             json = parser.parseString(data);            
         });

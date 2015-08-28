@@ -7,7 +7,18 @@
   overflow: auto !important
 }
 
+#logo{
+    position: fixed !important;
+    float: left !important;
+    padding-top: 5px !important
+}
 
+#omsHead{
+    margin-left: 110px !important; 
+    font-weight:bold !important;
+    position:fixed !important;
+    vertical-align: middle!important
+}
 
 .black-border{
     border: black 2px solid !important
