@@ -15,18 +15,17 @@
     <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.10.0.js"></script>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/0.9.19/css/ionic.css">
   </head>
   <body>
-      
-    <div ng-controller="AccordionDemoCtrl" id="widgetAccordian">
-        <div style="width:100%; height:40px!important; background-color:grey !important">    
-            <image id="logo" src="images/logo.png"></image> <p id="omsHead">OMS - Homepage with Approval Notifications</p>    
-        </div>
+            <button class="button bold" style="text-align:center;background-color:grey; width: 100%; color:black;white-space: normal !important"> OMS-Homepage With Approval Notifications<img class="title-image" src="images/logo.png" width="123" height="43" style=" float:left!important" /></button>
+  <div class="buttons">
+
       <!---First Widget--->
       <accordion close-others="oneAtATime">    
         <accordion-group is-open="true" class="">      
             <accordion-heading>
-                <button type="button" class="btn btn-danger font20 bold black-border" style="width:100%">
+                <button type="button" class="btn btn-danger font20 bold black-border" style="width:100%; white-space: normal !important">
                     <span class="badge badgeMargin" id="badgeValHead">2</span>
                     <i class="fa fa-suitcase fa-lg pad-right5"></i>        
                     Travel Request</button>
@@ -52,7 +51,7 @@
         <!---Second Widget--->  
         <accordion-group class="">      
             <accordion-heading>
-                <button type="button" class="btn btn-warning font20 bold black-border" style="width:100%">
+                <button type="button" class="btn btn-warning font20 bold black-border" style="width:100%; white-space: normal !important">
                 <span class="badge badgeMargin">3</span>
                 <i class="fa fa-envelope fa-lg pad-right5"></i>    
                 Material Request</button>
@@ -76,7 +75,7 @@
       <accordion>    
         <accordion-group>      
             <accordion-heading>
-                <button type="button" class="btn btn-success font20 bold black-border" style="width:100%">
+                <button type="button" class="btn btn-success font20 bold black-border" style="width:100%; white-space: normal !important">
                     <span class="badge badgeMargin">2</span>
                     <i class="fa fa-plane fa-lg pad-right5"></i>        
                     Leave Request</button>
@@ -101,9 +100,9 @@
         <!---Fourth Widget--->
         <accordion-group class="">      
             <accordion-heading>
-                <button type="button" class="btn btn-primary font20 bold black-border" style="width:100%">
+                <button type="button" class="btn btn-primary font20 bold black-border" style="width:100%; white-space: normal !important">
                 <span class="badge badgeMargin">1</span>
-                <i class="fa fa-calendar fa-lg pad-right5"></i>    
+                <i class="fa fa-users fa-lg pad-right5"></i>    
                 Associate Request</button>
             </accordion-heading>    
             <p>
@@ -132,7 +131,7 @@
      <script>           
             var socket = io.connect('http://localhost:8080');
             socket.on('message', function (message) {
-                alert(message);                
+                //alert(message);                
                 if(typeof(message) == "string")
                 {
                     var arr =[];
